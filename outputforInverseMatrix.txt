@@ -1,0 +1,22 @@
+> firstmatrix <- makeCacheMatrix (sqmat1)
+> yy <- cacheSolve (firstmatrix)
+> yyy <- cacheSolve (firstmatrix)
+getting cached data
+> 
+> secondmatrix <-  makeCacheMatrix (sqmat2)
+> xx <- cacheSolve(secondmatrix)
+> xxx <- cacheSolve(secondmatrix)
+getting cached data
+> xxx <- cacheSolve(firstmatrix)
+getting cached data
+> 
+> thirdmatrix <-  makeCacheMatrix (sqmat3)
+> zz <- cacheSolve(secondmatrix)
+getting cached data
+> xx <- cacheSolve(firstmatrix)
+getting cached data
+> yy <- cacheSolve(thirdmatrix)
+> vv <- cacheSolve(thirdmatrix)
+getting cached data
+> tt <- cacheSolve(thirdmatrix)
+getting cached data

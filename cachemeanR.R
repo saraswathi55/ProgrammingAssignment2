@@ -2,8 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
+##makeCacheMatrix 
 
-makeCacheMatrix <- function(x = numeric()) {
+makeVector <- function(x = numeric()) {
         m <- NULL
         set <- function (y) {
                 x <<- y
@@ -15,13 +16,14 @@ makeCacheMatrix <- function(x = numeric()) {
         getmean <-  function () m
         list (set = set, get  = get,
               setmean = setmean,
-              getmean = getmean)
+              getmean = getmean )
 }
 
 
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {
+#cacheSolve <- function(x, ...) {
+cachemean<- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         
         m <- x$getmean()
