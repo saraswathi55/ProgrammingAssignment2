@@ -9,7 +9,7 @@
 ## sample.R and outputfromInverseMatrix.txt gives the text code and the output for several runs.
 
  
-
+##This function creates a special "matrix" object that can cache its inverse.
 ## makeCacheMatrix   function creates a special 'matrix'  which is really a
 ## list containg a funciton  to 
 
@@ -41,7 +41,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## cacheSolve function  calculates the inverse of the special matrix 
-## created by the makeCacheMatrix  function. BUt, it will first check to see if the 
+## returned by the makeCacheMatrix  function above. BUt, it will first check to see if the 
 ## inverse has already been calculated. 
 ## If found the inverse is retrieved from Cache  
 ## If not, it will calculate the inverse and store it in the cache  via 
